@@ -18,6 +18,7 @@
 
 - (IBAction)pressOk
 {
+    NSLog(@"OK");
     [aurioTouchAppDelegate changeAppState:AppResearching animated:YES];
 }
 
