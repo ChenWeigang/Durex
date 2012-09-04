@@ -12,6 +12,5 @@
 #define kFrequencyReceievedNotification @"kFrequencyReceievedNotification"
 #define SHAKING_TIMES 2
 
-#define AAA
 
 #endif

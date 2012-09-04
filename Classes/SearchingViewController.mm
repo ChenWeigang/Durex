@@ -13,8 +13,8 @@
 #import "aurioTouchAppDelegate.h"
 
 
-double freq[7] = {18000,18500,19000,19500,20000,20500,21000};
 //int FreqRate[7] = {835, 858, 881, 905, 928, 951, 974};
+double freq[7] = {18000,18500,19000,19500,20000,20500,21000};
 static int count = 0;
 static int countMax = 0;
 static int indexFreq = 0;

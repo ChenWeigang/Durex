@@ -107,6 +107,7 @@ static UINavigationController *navController = nil;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {	
+    NSLog(@"Polish");
 	application.idleTimerDisabled = YES;
     
     receiver = [[FrequencyReceiver alloc] init];
