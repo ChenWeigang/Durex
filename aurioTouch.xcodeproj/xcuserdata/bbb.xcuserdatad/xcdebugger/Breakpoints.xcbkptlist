@@ -39,8 +39,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "27"
          endingLineNumber = "27"
-         landmarkName = "-receivedFrequency"
-         landmarkType = "5">
+         landmarkName = "@interface SearchingViewController()"
+         landmarkType = "2">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
