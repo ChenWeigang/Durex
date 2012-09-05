@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "FrequencyDefine.h"
 
 @class FrequencyReceiver;
 @class FrequencySender;
 extern FrequencyReceiver *receiver;
 extern FrequencySender *sender;
-extern double freq[7];
 
 typedef enum {
     SearchStateInit = 0,
@@ -24,9 +24,6 @@ typedef enum {
     SearchStateMated,
 }SearchState;
 
-extern int FreqRate[7];
-extern int histroyRate[3];
-extern int histroyRateIndex;
 
 @interface SearchingViewController : UIViewController {
 

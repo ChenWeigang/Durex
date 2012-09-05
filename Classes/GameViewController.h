@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class FrequencyReceiver;
+@class FrequencySender;
+
 @interface GameViewController : UIViewController
 
 @end

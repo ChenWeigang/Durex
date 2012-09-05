@@ -15,6 +15,7 @@
 #import "CAStreamBasicDescription.h"
 #import "AudioUnit/AudioUnit.h"
 #import "CAXException.h"
+#import "FrequencyDefine.h"
 
 #define SPECTRUM_BAR_WIDTH 4
 
@@ -22,9 +23,6 @@
 #define CLAMP(min,x,max) (x < min ? min : (x > max ? max : x))
 #endif
 
-extern int FreqRate[7];
-extern int histroyRate[3];
-extern int histroyRateIndex;
 
 @interface FrequencyReceiver : NSObject {
 

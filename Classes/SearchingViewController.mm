@@ -13,8 +13,6 @@
 #import "aurioTouchAppDelegate.h"
 
 
-
-
 @interface SearchingViewController ()
 
 @end
@@ -48,8 +46,6 @@
 
 - (void)nextStep
 {
-
-    
     if (state!=lastState) {
         count = 0;
     }
@@ -76,15 +72,12 @@
             if ([receiver isTracking]) {
                 [receiver stopTrack];
             }
-//            float f = 20000;
             if (![sender isPlaying]) {
-//                [sender playTone:f];
-//                NSLog(@"play tone %f", f);
-                                [sender playTone:freq[indexFreq]];
-                                NSLog(@"play tone = %f", freq[indexFreq]);
-                                labTitle.text = [NSString stringWithFormat:@"%f", freq[indexFreq]];
-                                indexFreq++;
-                                indexFreq = indexFreq%4;
+                [sender playTone:freq[indexFreq]];
+                NSLog(@"play tone = %f", freq[indexFreq]);
+                labTitle.text = [NSString stringWithFormat:@"%f", freq[indexFreq]];
+                indexFreq++;
+                indexFreq = indexFreq%4;
             }
             if (count%countMax==countMax-1) {
                 state = SearchStateSearchReceieving;
@@ -123,7 +116,6 @@
         default:
             break;
     }
-//    NSLog(@"state = %d", state);
     lastState = state;
     count++;
 }
@@ -160,10 +152,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     labTitle.text = @"";
+    labMate.text = @"";
     [receiver stopTrack];
     [sender stopTone];
     
-    state = SearchStateSearchReceieving;
+    
+    lastState = SearchStateInit; 
+    state = SearchStateSearchSending;
     count = 0;
     countMax = ABS(arc4random())%10+10;
     indexFreq = ABS(arc4random())%4;
@@ -183,7 +178,7 @@
                                                  name:@"kFrequencyReceievedNotification" 
                                                object:nil];
     
-    timerNextStep = [[NSTimer scheduledTimerWithTimeInterval:1/10.f target:self selector:@selector(nextStep) userInfo:nil repeats:YES] retain];  
+    timerNextStep = [[NSTimer scheduledTimerWithTimeInterval:1/12.f target:self selector:@selector(nextStep) userInfo:nil repeats:YES] retain];  
 
     CGRect frame = viewLoading.frame;
     frame.size.width = 1;
@@ -200,13 +195,8 @@
     } completion:^(BOOL finished) {                
         if (finished) {
             state = SearchStateInit;
-            
-            if ([receiver isTracking]) {
-                [receiver stopTrack];
-            }
-            if ([sender isPlaying]) {
-                [sender stopTone];
-            }
+            [receiver stopTrack];
+            [sender stopTone];
             
             [timerNextStep invalidate];
             [timerNextStep release], timerNextStep = nil;

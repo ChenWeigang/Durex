@@ -72,6 +72,7 @@ static UINavigationController *navController = nil;
     if (state==nextState) {
         return;
     }    
+    state = (AppState)nextState;
     
     NSArray *viewControllerNames = [NSArray arrayWithObjects:APP_VIEWCONTROLLER_NAMES];    
     
@@ -100,6 +101,7 @@ static UINavigationController *navController = nil;
     
     UIViewController *nextVC = [[[cc alloc] initWithNibName:className bundle:nil] autorelease];
     [navController pushViewController:nextVC animated:animated];
+    
 }
 
 

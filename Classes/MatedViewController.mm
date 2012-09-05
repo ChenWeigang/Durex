@@ -35,9 +35,9 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 
 - (IBAction)pressBack:(id)button
 {   
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [receiver stopTrack];
     [sender stopTone];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [UIAccelerometer sharedAccelerometer].delegate = nil;       
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
@@ -96,7 +96,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
             if (count>=3) {
                 shakingTimes++;
                 if (shakingTimes>=SHAKING_TIMES) {
-                    [sender playTone:21000];
+                    [sender playTone:freq[6]];
                     state = InstructionStateDone;
                     [self nextStep];
                 }
@@ -115,7 +115,6 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
         lastCount++;        
     }
 }
-
 
 - (void)nextStep
 {
@@ -171,15 +170,11 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)hiddenSound{
-    if ([sender isPlaying]) {
-        [sender stopTone]; 
-    }
-    [receiver startTrack];
-}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -204,6 +199,13 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
     [self performSelector:@selector(hiddenSound) withObject:nil afterDelay:10.f];
 }
 
+- (void)hiddenSound{
+    if ([sender isPlaying]) {
+        [sender stopTone]; 
+    }
+    [receiver startTrack];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [timerNextStep invalidate];
@@ -212,7 +214,6 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [UIAccelerometer sharedAccelerometer].delegate = nil;   
     [receiver stopTrack];
-    [sender stopTone];
 }
 
 

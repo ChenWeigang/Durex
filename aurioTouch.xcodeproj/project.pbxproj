@@ -21,7 +21,7 @@
 		25771A8815CB860100EC490E /* SearchFailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25771A8615CB860100EC490E /* SearchFailedViewController.xib */; };
 		25771A8C15CB883100EC490E /* MatedViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25771A8A15CB883000EC490E /* MatedViewController.mm */; };
 		25771A8D15CB883100EC490E /* MatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25771A8B15CB883100EC490E /* MatedViewController.xib */; };
-		25771A9115CB889D00EC490E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25771A8F15CB889C00EC490E /* GameViewController.m */; };
+		25771A9115CB889D00EC490E /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25771A8F15CB889C00EC490E /* GameViewController.mm */; };
 		25771A9215CB889D00EC490E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25771A9015CB889C00EC490E /* GameViewController.xib */; };
 		25771A9515CBA21100EC490E /* VPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25771A9415CBA21100EC490E /* VPUtil.m */; };
 		258898E415CF9269009E4378 /* NotFound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 258898E315CF9269009E4378 /* NotFound.jpg */; };
@@ -151,7 +151,7 @@
 		25771A8A15CB883000EC490E /* MatedViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MatedViewController.mm; sourceTree = "<group>"; };
 		25771A8B15CB883100EC490E /* MatedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatedViewController.xib; sourceTree = "<group>"; };
 		25771A8E15CB889C00EC490E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		25771A8F15CB889C00EC490E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		25771A8F15CB889C00EC490E /* GameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameViewController.mm; sourceTree = "<group>"; };
 		25771A9015CB889C00EC490E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		25771A9315CBA21000EC490E /* VPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPUtil.h; sourceTree = "<group>"; };
 		25771A9415CBA21100EC490E /* VPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPUtil.m; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 				25771A8A15CB883000EC490E /* MatedViewController.mm */,
 				25771A8B15CB883100EC490E /* MatedViewController.xib */,
 				25771A8E15CB889C00EC490E /* GameViewController.h */,
-				25771A8F15CB889C00EC490E /* GameViewController.m */,
+				25771A8F15CB889C00EC490E /* GameViewController.mm */,
 				25771A9015CB889C00EC490E /* GameViewController.xib */,
 				25771A9315CBA21000EC490E /* VPUtil.h */,
 				25771A9415CBA21100EC490E /* VPUtil.m */,
@@ -419,11 +419,11 @@
 		25CB4D5115F70038005B83A5 /* Frequency */ = {
 			isa = PBXGroup;
 			children = (
-				25CB4D5215F70038005B83A5 /* FFTBufferManager.cpp */,
-				25CB4D5315F70038005B83A5 /* FFTBufferManager.h */,
+				25CB4D5615F70038005B83A5 /* FrequencyDefine.h */,
 				25CB4D5415F70038005B83A5 /* Frequency.h */,
 				25CB4D5515F70038005B83A5 /* Frequency.m */,
-				25CB4D5615F70038005B83A5 /* FrequencyDefine.h */,
+				25CB4D5315F70038005B83A5 /* FFTBufferManager.h */,
+				25CB4D5215F70038005B83A5 /* FFTBufferManager.cpp */,
 				25CB4D5715F70038005B83A5 /* FrequencyReceiver.h */,
 				25CB4D5815F70038005B83A5 /* FrequencyReceiver.mm */,
 				25CB4D5915F70038005B83A5 /* FrequencySender.h */,
@@ -695,7 +695,7 @@
 				25771A8215CB85DA00EC490E /* SearchingViewController.mm in Sources */,
 				25771A8715CB860100EC490E /* SearchFailedViewController.m in Sources */,
 				25771A8C15CB883100EC490E /* MatedViewController.mm in Sources */,
-				25771A9115CB889D00EC490E /* GameViewController.m in Sources */,
+				25771A9115CB889D00EC490E /* GameViewController.mm in Sources */,
 				25771A9515CBA21100EC490E /* VPUtil.m in Sources */,
 				25CB4D5B15F70038005B83A5 /* FFTBufferManager.cpp in Sources */,
 				25CB4D5C15F70038005B83A5 /* Frequency.m in Sources */,

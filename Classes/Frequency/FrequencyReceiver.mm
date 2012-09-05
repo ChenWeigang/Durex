@@ -31,6 +31,11 @@
     return self;
 }
 
+- (void)clearBuffer
+{
+    
+}
+
 - (BOOL)isTracking
 {
     return timerTracking!=nil;

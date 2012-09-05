@@ -49,7 +49,6 @@
 
 #include <AudioToolbox/AudioToolbox.h>
 #include <libkern/OSAtomic.h>
-
 #include "SpectrumAnalysis.h"
 
 class FFTBufferManager

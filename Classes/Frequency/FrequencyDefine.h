@@ -11,7 +11,7 @@
 
 #define kFrequencyReceievedNotification @"kFrequencyReceievedNotification"
 #define SHAKING_TIMES 2
-#define AMPLIFUDE 0.5f
+#define AMPLIFUDE 0.85f
 
 extern double  freq[7];
 extern int     FreqRate[7];

@@ -88,7 +88,7 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 
 - (void)playTone:(double)freqValue
 {
-    NSLog(@"playTone");
+    NSLog(@"playTone %f", freqValue);
 	frequency = freqValue;
     
     if (toneUnit)
