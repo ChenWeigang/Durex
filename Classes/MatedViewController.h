@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FrequencyDefine.h"
 
 typedef enum {
     InstructionStateReady, // 看视频啊 设么的
@@ -17,9 +18,6 @@ typedef enum {
 
 @class FrequencyReceiver;
 @class FrequencySender;
-extern FrequencyReceiver *receiver;
-extern FrequencySender *sender;
-extern int freq[7];
 
 @interface MatedViewController : UIViewController <UIAccelerometerDelegate> {
     BOOL histeresisExcited;

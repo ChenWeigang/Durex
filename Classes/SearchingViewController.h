@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FreqDefine.h"
 #import <QuartzCore/QuartzCore.h>
 
 @class FrequencyReceiver;
@@ -31,14 +30,17 @@ extern int histroyRateIndex;
 
 @interface SearchingViewController : UIViewController {
 
-    SearchState state, lastState;
-
+    SearchState state;
+    SearchState lastState;
     NSTimer *timerNextStep;
     
     IBOutlet UILabel *labTitle;
     IBOutlet UILabel *labMate;
-    
     IBOutlet UIView *viewLoading;
+    
+    int count;
+    int countMax;
+    int indexFreq;
 }
 
 

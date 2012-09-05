@@ -25,8 +25,6 @@
 		25771A9215CB889D00EC490E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25771A9015CB889C00EC490E /* GameViewController.xib */; };
 		25771A9515CBA21100EC490E /* VPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25771A9415CBA21100EC490E /* VPUtil.m */; };
 		258898E415CF9269009E4378 /* NotFound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 258898E315CF9269009E4378 /* NotFound.jpg */; };
-		258C391C15CAAF3900FD6728 /* FrequencyReceiver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 258C391B15CAAF3900FD6728 /* FrequencyReceiver.mm */; };
-		258C392315CABC2100FD6728 /* FrequencySender.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C392215CABC2000FD6728 /* FrequencySender.m */; };
 		25B67C3215CBD19C002AD5DA /* bar_meter1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B67BE215CBD19C002AD5DA /* bar_meter1.png */; };
 		25B67C3315CBD19C002AD5DA /* bar_meter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B67BE315CBD19C002AD5DA /* bar_meter2.png */; };
 		25B67C3415CBD19C002AD5DA /* bar_parentingmeter1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B67BE415CBD19C002AD5DA /* bar_parentingmeter1.png */; };
@@ -109,9 +107,12 @@
 		25B67C8115CBD19D002AD5DA /* StartGame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25B67C3115CBD19C002AD5DA /* StartGame.jpg */; };
 		25B67C8515CBDAEF002AD5DA /* connect_female.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B67C8315CBDAEF002AD5DA /* connect_female.png */; };
 		25B67C8615CBDAEF002AD5DA /* connect_male.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B67C8415CBDAEF002AD5DA /* connect_male.png */; };
+		25CB4D4D15F6FF60005B83A5 /* FFTBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25CB4D4415F6FF60005B83A5 /* FFTBufferManager.cpp */; };
+		25CB4D4E15F6FF60005B83A5 /* Frequency.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CB4D4715F6FF60005B83A5 /* Frequency.m */; };
+		25CB4D4F15F6FF60005B83A5 /* FrequencyReceiver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25CB4D4A15F6FF60005B83A5 /* FrequencyReceiver.mm */; };
+		25CB4D5015F6FF60005B83A5 /* FrequencySender.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CB4D4C15F6FF60005B83A5 /* FrequencySender.m */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		A10A0C0C0DEDDFD000E5A482 /* SpectrumAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10A0C070DEDDFD000E5A482 /* SpectrumAnalysis.cpp */; };
-		A10A0C0F0DEDE20700E5A482 /* FFTBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A10A0C0E0DEDE20700E5A482 /* FFTBufferManager.cpp */; };
 		A16C47120DE37F9E00F4A0B3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16C47110DE37F9E00F4A0B3 /* OpenGLES.framework */; };
 		A16C473F0DE3801700F4A0B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16C473E0DE3801700F4A0B3 /* QuartzCore.framework */; };
 		A16C48360DE389CB00F4A0B3 /* oscilloscope.png in Resources */ = {isa = PBXBuildFile; fileRef = A16C48350DE389CB00F4A0B3 /* oscilloscope.png */; };
@@ -154,12 +155,7 @@
 		25771A9015CB889C00EC490E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		25771A9315CBA21000EC490E /* VPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPUtil.h; sourceTree = "<group>"; };
 		25771A9415CBA21100EC490E /* VPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPUtil.m; sourceTree = "<group>"; };
-		25771A9615CBA30300EC490E /* FreqDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreqDefine.h; sourceTree = "<group>"; };
 		258898E315CF9269009E4378 /* NotFound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NotFound.jpg; sourceTree = "<group>"; };
-		258C391A15CAAF3900FD6728 /* FrequencyReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyReceiver.h; sourceTree = "<group>"; };
-		258C391B15CAAF3900FD6728 /* FrequencyReceiver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrequencyReceiver.mm; sourceTree = "<group>"; };
-		258C392115CABC2000FD6728 /* FrequencySender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencySender.h; sourceTree = "<group>"; };
-		258C392215CABC2000FD6728 /* FrequencySender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencySender.m; sourceTree = "<group>"; };
 		25B67BE215CBD19C002AD5DA /* bar_meter1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_meter1.png; sourceTree = "<group>"; };
 		25B67BE315CBD19C002AD5DA /* bar_meter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_meter2.png; sourceTree = "<group>"; };
 		25B67BE415CBD19C002AD5DA /* bar_parentingmeter1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_parentingmeter1.png; sourceTree = "<group>"; };
@@ -242,14 +238,21 @@
 		25B67C3115CBD19C002AD5DA /* StartGame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StartGame.jpg; sourceTree = "<group>"; };
 		25B67C8315CBDAEF002AD5DA /* connect_female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_female.png; sourceTree = "<group>"; };
 		25B67C8415CBDAEF002AD5DA /* connect_male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_male.png; sourceTree = "<group>"; };
+		25CB4D4415F6FF60005B83A5 /* FFTBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTBufferManager.cpp; sourceTree = "<group>"; };
+		25CB4D4515F6FF60005B83A5 /* FFTBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTBufferManager.h; sourceTree = "<group>"; };
+		25CB4D4615F6FF60005B83A5 /* Frequency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frequency.h; sourceTree = "<group>"; };
+		25CB4D4715F6FF60005B83A5 /* Frequency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frequency.m; sourceTree = "<group>"; };
+		25CB4D4815F6FF60005B83A5 /* FrequencyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyDefine.h; sourceTree = "<group>"; };
+		25CB4D4915F6FF60005B83A5 /* FrequencyReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyReceiver.h; sourceTree = "<group>"; };
+		25CB4D4A15F6FF60005B83A5 /* FrequencyReceiver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrequencyReceiver.mm; sourceTree = "<group>"; };
+		25CB4D4B15F6FF60005B83A5 /* FrequencySender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencySender.h; sourceTree = "<group>"; };
+		25CB4D4C15F6FF60005B83A5 /* FrequencySender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencySender.m; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* aurioTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aurioTouch_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		A10A0C070DEDDFD000E5A482 /* SpectrumAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpectrumAnalysis.cpp; sourceTree = "<group>"; };
 		A10A0C080DEDDFD000E5A482 /* SpectrumAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectrumAnalysis.h; sourceTree = "<group>"; };
-		A10A0C0D0DEDE20700E5A482 /* FFTBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTBufferManager.h; sourceTree = "<group>"; };
-		A10A0C0E0DEDE20700E5A482 /* FFTBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTBufferManager.cpp; sourceTree = "<group>"; };
 		A16C47110DE37F9E00F4A0B3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A16C473E0DE3801700F4A0B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A16C48350DE389CB00F4A0B3 /* oscilloscope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oscilloscope.png; sourceTree = "<group>"; };
@@ -291,12 +294,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A10A0C0D0DEDE20700E5A482 /* FFTBufferManager.h */,
-				A10A0C0E0DEDE20700E5A482 /* FFTBufferManager.cpp */,
-				258C391A15CAAF3900FD6728 /* FrequencyReceiver.h */,
-				258C391B15CAAF3900FD6728 /* FrequencyReceiver.mm */,
-				258C392115CABC2000FD6728 /* FrequencySender.h */,
-				258C392215CABC2000FD6728 /* FrequencySender.m */,
+				25CB4D4315F6FF60005B83A5 /* Frequecy */,
 				1D3623240D0F684500981E51 /* aurioTouchAppDelegate.h */,
 				1D3623250D0F684500981E51 /* aurioTouchAppDelegate.mm */,
 				25771A6615CB80C000EC490E /* TermsViewController.h */,
@@ -316,7 +314,6 @@
 				25771A9015CB889C00EC490E /* GameViewController.xib */,
 				25771A9315CBA21000EC490E /* VPUtil.h */,
 				25771A9415CBA21100EC490E /* VPUtil.m */,
-				25771A9615CBA30300EC490E /* FreqDefine.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -417,6 +414,22 @@
 				25B67C3115CBD19C002AD5DA /* StartGame.jpg */,
 			);
 			path = Iphone4;
+			sourceTree = "<group>";
+		};
+		25CB4D4315F6FF60005B83A5 /* Frequecy */ = {
+			isa = PBXGroup;
+			children = (
+				25CB4D4415F6FF60005B83A5 /* FFTBufferManager.cpp */,
+				25CB4D4515F6FF60005B83A5 /* FFTBufferManager.h */,
+				25CB4D4615F6FF60005B83A5 /* Frequency.h */,
+				25CB4D4715F6FF60005B83A5 /* Frequency.m */,
+				25CB4D4815F6FF60005B83A5 /* FrequencyDefine.h */,
+				25CB4D4915F6FF60005B83A5 /* FrequencyReceiver.h */,
+				25CB4D4A15F6FF60005B83A5 /* FrequencyReceiver.mm */,
+				25CB4D4B15F6FF60005B83A5 /* FrequencySender.h */,
+				25CB4D4C15F6FF60005B83A5 /* FrequencySender.m */,
+			);
+			path = Frequecy;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -676,17 +689,18 @@
 				F74ADD1B0DDA24AA0046BEC2 /* CAStreamBasicDescription.cpp in Sources */,
 				F74ADD1C0DDA24AA0046BEC2 /* CAXException.cpp in Sources */,
 				A10A0C0C0DEDDFD000E5A482 /* SpectrumAnalysis.cpp in Sources */,
-				A10A0C0F0DEDE20700E5A482 /* FFTBufferManager.cpp in Sources */,
 				0765F5880DF0DC28006468E4 /* rad2fft.c in Sources */,
 				F712EAB00DF0FEAF003F7B58 /* aurio_helper.cpp in Sources */,
-				258C391C15CAAF3900FD6728 /* FrequencyReceiver.mm in Sources */,
-				258C392315CABC2100FD6728 /* FrequencySender.m in Sources */,
 				25771A6915CB80C000EC490E /* TermsViewController.m in Sources */,
 				25771A8215CB85DA00EC490E /* SearchingViewController.mm in Sources */,
 				25771A8715CB860100EC490E /* SearchFailedViewController.m in Sources */,
 				25771A8C15CB883100EC490E /* MatedViewController.mm in Sources */,
 				25771A9115CB889D00EC490E /* GameViewController.m in Sources */,
 				25771A9515CBA21100EC490E /* VPUtil.m in Sources */,
+				25CB4D4D15F6FF60005B83A5 /* FFTBufferManager.cpp in Sources */,
+				25CB4D4E15F6FF60005B83A5 /* Frequency.m in Sources */,
+				25CB4D4F15F6FF60005B83A5 /* FrequencyReceiver.mm in Sources */,
+				25CB4D5015F6FF60005B83A5 /* FrequencySender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,8 +711,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Soniclix Media, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soniclix Media, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Navin Williams (N6Q3Q2NHJ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Navin Williams (N6Q3Q2NHJ9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -707,8 +721,8 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = durex;
-				PROVISIONING_PROFILE = "7040025B-0279-46C6-B0D5-B1C9DC730444";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7040025B-0279-46C6-B0D5-B1C9DC730444";
+				PROVISIONING_PROFILE = "5748AC16-69E3-4729-95DA-0ABE35ABBCA9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5748AC16-69E3-4729-95DA-0ABE35ABBCA9";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -717,16 +731,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Soniclix Media, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soniclix Media, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Navin Williams (N6Q3Q2NHJ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Navin Williams (N6Q3Q2NHJ9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = aurioTouch_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = durex;
-				PROVISIONING_PROFILE = "7040025B-0279-46C6-B0D5-B1C9DC730444";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7040025B-0279-46C6-B0D5-B1C9DC730444";
+				PROVISIONING_PROFILE = "5748AC16-69E3-4729-95DA-0ABE35ABBCA9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5748AC16-69E3-4729-95DA-0ABE35ABBCA9";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
